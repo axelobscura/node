@@ -26,6 +26,13 @@ const requestHandler = (req, res) => {
             });
         });
     }
+    if (url === '/user') {
+        res.write('<html>');
+        res.write('<head><title>USERS</title></head>');
+        res.write('<body><ul><li>User 1</li><li>User 2</li></ul></body>');
+        res.write('</html>');
+        return res.end();
+    }
     res.setHeader('Content-Type', 'text/html');
     res.write('<html>');
     res.write('<head><title>ENTER MESSAGE</title></head>');
