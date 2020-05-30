@@ -1,0 +1,20 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Complete node js guide",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axelobscura/node.git"
+  },
+  "author": "Axel Laurent Obscura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axelobscura/node/issues"
+  },
+  "homepage": "https://github.com/axelobscura/node#readme"
+}
