@@ -5,7 +5,7 @@ const requestHandler = (req, res) => {
     const method = req.method;
     if (url === '/') {
         res.write('<html>');
-        res.write('<head><title>ENTER MESSAGE</title></head>');
+        res.write('<head><title>INGRESAR MENSAJE</title></head>');
         res.write('<body><form action="/message" method="POST"><input type="text" name="message"><button type="submit">SUBMIT</button></form></body>');
         res.write('</html>');
         return res.end();
@@ -14,6 +14,7 @@ const requestHandler = (req, res) => {
         const body = [];
         req.on('data', (chunk) => {
             body.push(chunk);
+            console.log(chunk);
         });
         return req.on('end', () => {
             const parseBody = Buffer.concat(body).toString();
