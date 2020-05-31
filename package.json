@@ -1,0 +1,24 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Node complete guide",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axelobscura/node.git"
+  },
+  "author": "Axel Laurent Obscura Sarzotti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axelobscura/node/issues"
+  },
+  "homepage": "https://github.com/axelobscura/node#readme"
+}
