@@ -17,17 +17,19 @@ html(lang="en")
 
         main
             if prods.length > 0
-                .grid
-                    each product in prods
-                        article.card.product-item
-                            header.card__header
-                                h1.product__title #{product.title}
-                            div.card__image
-                                img(src="https://assets.entrepreneur.com/content/3x2/2000/20191219170611-GettyImages-1152794789.jpeg", alt="")
-                            div.card__content
-                                h2.product__price $19.90
-                                p.product__dwscription A Very interesting book
-                            .card__actions
-                                button.btn Add to cart
+                .container
+                    .row
+                        each product in prods
+                            div.col-md-3
+                                article.card.product-item
+                                    header.card__header
+                                        h1.product__title #{product.title}
+                                    div.card__image
+                                        img(src="https://assets.entrepreneur.com/content/3x2/2000/20191219170611-GettyImages-1152794789.jpeg", alt="")
+                                    div.card__content
+                                        h2.product__price $19.90
+                                        p.product__dwscription A Very interesting book
+                                    .card__actions
+                                        button.btn Add to cart
             else 
                 h1 No products
